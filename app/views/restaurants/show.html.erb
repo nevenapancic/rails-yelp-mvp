@@ -1,7 +1,22 @@
-<h2><%= @restaurant.name %></h2>
-<p><%= @restaurant.address %></p>
-<p><%= @restaurant.phone_number %></p>
-<p><%= @restaurant.category %></p>
+<div class="container">
+<div class="card ml-5" style="width: 18rem;">
+<img class="card-img-top" src="./app/assets/images/restaurant.jpeg" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title pl-5"><%= @restaurant.name %></h5>
+<ul class="list-group list-group-flush">
+ <li class="list-group-item">🗺️ <%= @restaurant.address %></li>
+<li class="list-group-item"> <%= @restaurant.phone_number %></li>
+<li class="list-group-item mb-2">🍴 <%= @restaurant.category %></li>
+</ul>
+<div class="btn btn-danger btn-block">
  <%= link_to "Back to restaurants", restaurants_path %>
+</div>
+<div class="btn btn-success btn-block">
  <%= link_to "Add a review",  new_restaurant_review_path(@restaurant) %>
+ </div>
+ <div class="btn btn-warning btn-block">
 <%= link_to "See all reviews for this restaurant", restaurant_reviews_path(@restaurant) %>
+</div>
+</div>
+</div>
+</div>

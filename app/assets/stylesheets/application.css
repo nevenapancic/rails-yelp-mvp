@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.btn {
+  color:beige;
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+}
+.card.ml-5 {
+  text-align: center;
+}
